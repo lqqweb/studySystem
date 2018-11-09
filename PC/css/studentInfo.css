@@ -1,0 +1,17 @@
+
+/* 人员信息 */
+.personalInfoContent{
+	margin-left:15px;
+}
+.personInfoTop{
+	display:flex;
+}
+.personInfoTop input{
+	margin-right:10px;
+}
+.personalList{
+	margin-top:15px;
+}
+table thead tr th,table tbody tr td{
+	text-align:center;
+}

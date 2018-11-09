@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课件管理系统</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/courseware.css">
+	<link rel="stylesheet" href="css/jedate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.jedate.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-paginator.js"></script>
+	<script src="js/courseware.js"></script>
+</head>
+<body>
+<!-- 顶部 -->
+	<div class="topContent">
+			<div class="Img1">
+				<img src="images/logo.jpg" alt="" class="logo">
+			</div>
+				
+			<div class="Img2">
+				<input type="text" value="请输入课程名称" style="color:rgb(153,153,153)" class="inputSearch">
+				<img src="images/search.png" alt="" class="searchbutton">
+			</div>
+				
+	</div>
+	<!-- 中间图片 -->
+	<div class="bodyTop_teachercenter">
+		<img src="images/teachercenter-banner.jpg" alt="" class="teacherImg">
+	</div>
+	<!-- 底部内容 -->
+	<div class="context">
+	<!-- 左侧菜单 -->
+		<div class="menuLeft">
+			<div class="courseList "><a href="index.html">课程表</a></div>
+			<div class="outlineCenter"><a href="outline.html">大纲内容</a></div>
+			<div class="personalInfo"><a href="studentInfo.html">人员信息</a></div>
+			<div class="courseCenter"><a href="course.html">课程内容</a></div>
+			<div class="coursewareInfo addColor"><a href="courseware.html">课件信息</a></div>
+		</div>
+		<!-- 右侧菜单对应内容 -->
+		<div class="contentRight">
+			<!-- 课件-->
+			<div class="RightTopContent">
+				<div class="toolsBar">
+					<input type="button" value="添加" class="btn btn-default" id="add" />
+					<input type="button" value="删除" class="btn btn-default" id="del" />
+				</div>
+				<div class="searchBox">
+					<select name="" id="">
+						<option value="1">请选择部门</option>
+						<option value="2">行业分享</option>
+						<option value="3">办公技巧</option>
+						<option value="4">华为业务</option>
+						<option value="5">应知应会</option>
+					</select>
+					<select name="" id="">
+						<option value="1">请选择专业</option>
+						<option value="2">考试专业</option>
+						<option value="3">内部测试</option>
+						<option value="4">测试专业</option>
+						<option value="5">华为专业</option>
+					</select>
+					<input type="button" value="查询" style="width:50px;height:20px">
+				</div>
+			</div>
+
+			<div class="selectedContent">
+				<table style="border-collapse: collapse;" cellspacing="0" border="1">
+					<thead>
+						<tr>
+							<th scope="col" style="width:60px;">
+								<input type="checkbox">
+							</th>
+							<th scope="col" style="width:60px;">序号</th>
+							<th scope="col">名称</th>
+							<th scope="col">所属专业</th>
+							<th scope="col">所属教师</th>
+							<th scope="col" style="width:60px;">使用</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width:60px;">
+								<input type="checkbox">
+							</td>
+							<td style="width:60px;">1</td>
+							<td><a href="">宽带大会</a></td>
+							<td>培训管理</td>
+							<td>李三</td>
+							<td style="width:60px;">
+								<a href="">使用</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

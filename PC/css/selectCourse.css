@@ -1,0 +1,127 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: #94d1e0;
+	min-width:950px;
+}
+
+body,p,div,td{
+	font-size: 14px;
+	line-height: 18px;
+}
+.top{
+	display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    align-items: center;
+    /* border:1px solid red; */
+}
+.top p{
+	font-size:35px;
+}
+.logoImg img{
+	width:110px;
+	height:100px;
+	border-radius: 100px;
+    margin-right: 30px;
+}
+/* 老师选择自己的姓名 */
+.selectCourse{
+	display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.selectOpeation ,.queryOpeation{
+	/* margin-left: -36%; */
+    margin-top:30px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#selectTeacher,#queryText,#queryNum{
+	height:30px;
+}
+#btn{
+	padding: 5px 10px;
+}
+
+/* 老师及课程信息 */
+.content{
+	width:100%;
+	height:100%;
+	display:flex;
+}
+/* 左边老师信息 */
+.teacherInfo{
+	width:30%;
+	border:1px solid gray;
+	text-align:left;
+}
+.teacherInfo p{
+	margin-left: 95px;
+}
+.teacherImg{
+	width:120px;
+	height:120px;
+	padding-top: 40px;
+    margin-left: 95px;
+}
+.teacherName,.duty,.courseNum{
+	font-size:20px;
+	margin-top:20px;
+}
+
+/* 右边对应的课程信息 */
+.courseInfo{
+	width:70%;
+	/* border:1px solid gray; */
+}
+/* table{
+	margin:0 auto;
+}
+thead{
+	  background-color: #ddd;
+}
+tbody tr{
+	cursor:pointer;
+}
+
+thead tr th,tbody tr td{
+	width:160px;
+	height:40px;
+	text-align:center;
+}
+.table-cont{
+	max-height:400px;
+	overflow:auto;
+} */
+
+table{
+		width:97%;
+		margin-left:20px;
+	}
+table tbody {  
+    display:block;  
+    height:450px;  
+    overflow-y:scroll;  
+}  
+  
+  
+table thead, tbody tr {  
+    display:table;  
+    width:100%;  
+    table-layout:fixed;  
+}  
+  
+  
+table thead {  
+    width: calc( 100% - 1.2em );
+    height: 40px;
+} 
+table tbody tr{
+	text-align:center;
+} 

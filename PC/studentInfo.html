@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课件管理系统</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/studentInfo.css">
+	<link rel="stylesheet" href="css/jedate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.jedate.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-paginator.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$(function(){
+			$("#add").click(function(){
+				window.location.href="studentAdd.html"
+			})
+		})
+	</script>
+
+</head>
+<body>
+<!-- 顶部 -->
+	<div class="topContent">
+			<div class="Img1">
+				<img src="images/logo.jpg" alt="" class="logo">
+			</div>
+				
+			<div class="Img2">
+				<input type="text" value="请输入课程名称" style="color:rgb(153,153,153)" class="inputSearch">
+				<img src="images/search.png" alt="" class="searchbutton">
+			</div>
+				
+	</div>
+	<!-- 中间图片 -->
+	<div class="bodyTop_teachercenter">
+		<img src="images/teachercenter-banner.jpg" alt="" class="teacherImg">
+	</div>
+	<!-- 底部内容 -->
+	<div class="context">
+	<!-- 左侧菜单 -->
+		<div class="menuLeft">
+			<div class="courseList "><a href="index.html">课程表</a></div>
+			<div class="outlineCenter"><a href="outline.html">大纲内容</a></div>
+			<div class="personalInfo addColor"><a href="studentInfo.html">人员信息</a></div>
+			<div class="courseCenter"><a href="course.html">课程内容</a></div>
+			<div class="coursewareInfo"><a href="courseware.html">课件信息</a></div>
+		</div>
+		<!-- 右侧菜单对应内容 -->
+		<div class="contentRight">
+			
+			<!-- 人员信息 -->
+			<div class="personalInfoContent">
+				<div class="personInfoTop">
+				
+					<input type="file" class="btn btn-default" style="width:220px" />
+					<input type="button" value="批量导入" class="btn btn-default" id="add_all" />
+					<input type="button" value="批量删除" class="btn btn-default" id="del_all" />
+					<input type="button" value="添加" class="btn btn-default" id="add" />
+					<input type="button" value="删除" class="btn btn-default" id="del" />
+				</div>
+				<div class="personalList">
+					<table cellspacing="0" class="table table-hover" border="1" style="border-collapse:collapse;">
+						<thead>
+							<tr>
+								<th scope="col">
+									<input type="checkbox">
+								</th>
+								<th scope="col">学号</th>
+								<th scope="col">姓名</th>
+								<th scope="col">院系</th>
+								<th scope="col">入学时间</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="center" style="width:50px">
+									<input type="checkbox">
+								</td>
+								<td class="center" style="width:50px">
+									JH021667
+								</td>
+								<td class="center" style="width:50px">
+									张三
+								</td>
+								<td class="center" style="width:50px">
+									工程信息
+								</td>
+								<td class="center" style="width:50px">
+									2017-9-1
+								</td>
+							</tr>
+
+							<tr>
+								<td class="center" style="width:50px">
+									<input type="checkbox">
+								</td>
+								<td class="center" style="width:50px">
+									JH021667
+								</td>
+								<td class="center" style="width:50px">
+									张三
+								</td>
+								<td class="center" style="width:50px">
+									工程信息
+								</td>
+								<td class="center" style="width:50px">
+									2017-9-1
+								</td>
+							</tr>
+
+							<tr>
+								<td class="center" style="width:50px">
+									<input type="checkbox">
+								</td>
+								<td class="center" style="width:50px">
+									JH021667
+								</td>
+								<td class="center" style="width:50px">
+									张三
+								</td>
+								<td class="center" style="width:50px">
+									工程信息
+								</td>
+								<td class="center" style="width:50px">
+									2017-9-1
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

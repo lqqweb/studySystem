@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课件管理系统</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/coursewareEdit.css">
+	<link rel="stylesheet" href="css/jedate.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.jedate.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-paginator.js"></script>
+	<script src="js/coursewareEdit.js"></script>
+</head>
+<body>
+<!-- 顶部 -->
+	<div class="topContent">
+			<div class="Img1">
+				<img src="images/logo.jpg" alt="" class="logo">
+			</div>
+				
+			<div class="Img2">
+				<input type="text" value="请输入课程名称" style="color:rgb(153,153,153)" class="inputSearch">
+				<img src="images/search.png" alt="" class="searchbutton">
+			</div>
+				
+	</div>
+	<!-- 添加课件信息-->
+	<div class="context">
+		<!-- 左边章节列表 -->
+		<div class="leftList">
+			<h4>课程章节</h4>
+			<div class="courseItems">
+				<table cellspacing="0" border="1" style="border-collapse: collapse;">
+					<tr>
+						<td class="leftTd">第一章:华为大会分享</td>
+						<td class="delTd"><input type="image" class="del" src="images/dell.png" title="删除"></td>
+					</tr>
+					<tr>
+						<td class="leftTd">第一章:华为大会分享</td>
+						<td class="delTd"><input type="image" class="del" src="images/dell.png" title="删除"></td>
+					</tr>
+
+					<tr>
+						<td class="leftTd">第一章:华为大会分享</td>
+						<td class="delTd"><input type="image" class="del" src="images/dell.png" title="删除"></td>
+					</tr>
+
+					<tr>
+						<td class="leftTd">第一章:华为大会分享</td>
+						<td class="delTd"><input type="image" class="del" src="images/dell.png" title="删除"></td>
+					</tr>
+
+
+					
+				</table>
+			</div>
+		</div>
+		<!-- 右边添加内容区域 -->
+		<div class="addContent">
+			<h4>章节内容编辑</h4>
+			<fieldset>
+				<legend>基本信息</legend>
+				<div class="titleName">
+					章节名称: <input type="text" class="names"><span style="color:red">*&nbsp;&nbsp;</span><input type="checkbox">启用
+				</div>
+				<div class="uploadSection">
+				请选择上传内容类型：
+					<div class="uploadImg selectColor">上传图片或者视频（二者选其一）</div>
+					<!-- <div class="uploadPlayer">上传视频</div> -->
+				</div>
+				<!-- 上传图片或者视频 -->
+				<div class="uploadImgContent">
+					<div id="containerImg"></div>
+					<input type="file" name="pic1" id="pic1" onchange="preview(this)" accept="image/x-png, image/jpg, image/jpeg, image/gif,video/mp4">
+ 					
+				</div>
+				<!-- 上传视频 -->
+				<!-- <div class="uploadPlayerContent">
+					<input type="file" accept="video/mp4">
+				</div> -->
+				<!-- 图片或视频注释 -->
+				<div class="annotation">
+					<p>注释内容：</p>
+					<textarea name="" id="" cols="100" rows="10"></textarea>
+				</div>
+				<button class="save">保存</button>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>

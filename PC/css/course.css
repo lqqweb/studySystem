@@ -1,0 +1,13 @@
+.courseContent{
+	/* border:1px solid blue; */
+}
+.toolsBar{
+	margin-left:15px;
+}
+.courseContent{
+	margin:15px 0 0 15px;
+}
+thead tr th,tbody tr td{
+	width:160px;
+	text-align:center;
+}

@@ -1,0 +1,32 @@
+
+/* 添加新课程信息 */
+fieldset{
+    width:55%;
+    border: 1px solid #F90 !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    text-align:left;
+    margin:0 auto !important;
+}
+legend{
+    color: #FF6600 !important;
+    text-align: left;
+    width: 60px !important;
+    font-size: 15px !important;
+}
+.courseContent{
+    margin-left:40px;
+}
+ tbody tr td input{
+    
+    width:200px;
+    height:30px;
+    margin: 5px 0 10px !important;
+}
+select{
+    width:150px;
+    height:30px;
+}
+button{
+    padding:3px 6px;
+}

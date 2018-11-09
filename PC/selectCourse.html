@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>老师选课页面</title>
+	<link rel="stylesheet" href="css/selectCourse.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/selectCourse.js"></script>
+</head>
+<body>
+	<div class="top">
+		<p>欢迎您使用嘉环教育系统！</p> 
+		<div class="logoImg">
+			<img src="images/jhlogo.jpg" alt="">
+			<img src="images/school2.jpg" alt="">
+		</div>
+	</div>
+
+
+	
+		<!-- 老师选择自己的姓名 -->
+	<div class="selectCourse">
+		<div class="selectOpeation">
+			<span>您好，老师：</span>
+			<select name="" id="selectTeacher">
+				<option value="0">请选择您的姓名</option>
+				<option value="1">小张</option>
+				<option value="2">小明</option>
+				<option value="3">小王</option>
+				<option value="4">小李</option>
+			</select>
+
+		</div>
+		<div class="queryOpeation">
+			<input type="text" placeholder="请输入名字" id="queryText">
+			<input type="text" placeholder="请输入编码" id="queryNum">
+			<button id="btn">查询</button>
+		</div>
+		
+
+		
+	</div>
+	<!-- 老师及课程信息 -->
+
+	<div class="content">
+		<!-- 左边老师信息 -->
+		<div class="teacherInfo">
+			<img src="images/header.jpg" class="teacherImg" alt="">
+			<p class="teacherName">姓名：<span>张三</span></p>
+			<p class="duty">职务：<span>高级讲师</span></p>
+			<p class="courseNum">课程总数/未完成：<span>10</span>/<span style="color:red">5</span></p>
+		</div>
+		<!-- 右边对应的课程信息 -->
+		<div class="courseInfo">
+			<!-- <div class="table-cont" id="table-cont">
+
+				<table  style="border-collapse: collapse;" cellspacing="0" border="1">
+					<thead>
+						<tr>
+							<th scope="col">是否授课</th>
+							<th scope="col" style="width:60px;">序号</th>
+							<th scope="col">课程名称</th>
+							<th scope="col">老师</th>
+							<th scope="col" style="width:60px;">人数</th>
+							<th scope="col" style="width:150px;">时间</th>
+							<th scope="col">课件名称</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="col">YES</th>
+							<td scope="col" style="width:60px;">1</td>
+							<td scope="col">华为业务</td>
+							<td scope="col">张三</td>
+							<td scope="col" style="width:60px;">56</td>
+							<td scope="col" style="width:150px;">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td scope="col">新技术</td>
+						</tr>
+
+						<tr>
+							<th scope="col">NO</th>
+							<td scope="col" style="width:60px;">2</td>
+							<td scope="col">代维业务</td>
+							<td scope="col">小张</td>
+							<td scope="col" style="width:60px;">100</td>
+							<td scope="col" style="width:150px;">2018/5/3 14:30~2018/5/3 16:30</td>
+							<td scope="col">科技创新</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> -->
+
+
+			<table  cellspacing="0" border="1">
+					<thead>
+						<tr>
+							<th >是否授课</th>
+							<th  >序号</th>
+							<th >课程名称</th>
+							<th >老师编码</th>
+							<th >老师姓名</th>
+							<th  >人数</th>
+							<th  style="width: 125px">时间</th>
+							<th >课件名称</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th >YES</th>
+							<td >1</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >2</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >3</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >4</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >5</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >6</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >7</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >8</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >9</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >10</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+						<tr>
+							<th >YES</th>
+							<td >11</td>
+							<td>华为业务</td>
+							<td>001</td>
+							<td>张三</td>
+							<td>56</td>
+							<td style="width: 125px">2018/5/1 14:30~2018/5/1 16:30</td>
+							<td>新技术</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+		</div>
+	</div>
+
+</body>
+</html>

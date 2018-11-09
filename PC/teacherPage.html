@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>老师页面</title>
+	<link rel="stylesheet" href="css/teacherPage.css">
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(function(){
+				$("ul li").click(function(){
+				
+					$(this).addClass('addColor').siblings().removeClass('addColor');
+					$(this).find("span").addClass('changeTigle');
+					$(this).siblings().find("span").removeClass('changeTigle');
+				})
+			})
+	</script>
+</head>
+
+<body>
+	
+	<!-- 左边课程大纲 -->
+	<div id="leftContent">  
+		<h2>课程名</h2>
+		<div class="courseList">
+			<ul>
+				<li class="addColor"><span class="tigle changeTigle"></span>章节一&nbsp;&nbsp;&nbsp;&nbsp;基地十分骄傲</li>
+				<li><span class="tigle"></span>章节二&nbsp;&nbsp;&nbsp;&nbsp;简单工具的高级</li>
+				<li><span class="tigle"></span>章节三&nbsp;&nbsp;&nbsp;&nbsp;联发科反垄断</li>
+				<li><span class="tigle"></span>章节四&nbsp;&nbsp;&nbsp;&nbsp;大范甘迪股份</li>
+				<li><span class="tigle"></span>章节五&nbsp;&nbsp;&nbsp;&nbsp;阿道夫撒十多个</li>
+			</ul>
+		</div>
+
+	</div>  
+		<!-- 右边内容详情 -->
+	<div id="rightContent">  
+		<div id="contentInner">  
+		<div class="courseCenter">
+			 <!--  <div class="ImgOrVideo">
+			  		<img src="images/welcome.jpg" alt="">
+			  		<video class="videoPlay" controls="controls" preload>
+						<source src="video/111.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+			  </div> -->
+			  <div class="note">
+			  		章节备注内容
+			  </div>
+		  </div>
+		  <div class="btn">
+		  	<a href="" class="prev">上一页</a>
+			<a href="" class="next">下一页</a>
+		  </div>
+		</div>  
+	</div>  
+
+</body>
+</html>

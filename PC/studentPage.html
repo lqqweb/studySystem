@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生页面</title>
+	<style>
+		body{
+			background:#94d1e0;
+		}
+		h2{
+			margin-left:50px;
+		}
+		.content{
+			width:100%;
+			text-align:center;
+			display:flex;
+		}
+		.videoOrImg{
+			width:90%;
+			/* border:1px solid blue; */
+		}
+		img{
+			width:77%;
+			display:none;
+		}
+		video{
+			width:93%;
+		}
+		.btn{
+			width:5%;
+			/* border:1px solid green; */
+			padding-top:150px;
+			text-align:left;
+		}
+		a{
+			display: inline-block;
+		    width: 20px;
+		    text-decoration: none;
+		    margin-left: 19%;
+		    background: #66c796;
+		    padding: 9px 5px 9px 8px;
+		    border-radius: 50px;
+		    color: white;
+		}
+		a:hover{
+			-webkit-transform: scale(1.1);
+			transform:scale(1.1);
+		}
+		.prev{
+			margin-bottom:200px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h2>章节一标题</h2>
+	<div class="content">
+		<div class="videoOrImg">
+			<img src="images/welcome.jpg" alt="">
+
+			<video class="videoPlay" controls="controls" preload>
+				<source src="video/111.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="btn">
+			<a href="" class="prev">上一页</a>
+			<a href="" class="next">下一页</a>
+		</div>
+	</div>
+</body>
+</html>

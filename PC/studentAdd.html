@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加学生</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/courseEdit.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jedate.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.jedate.min.js"></script>
+	<script>
+		
+		$(function(){
+			$("#selectStartDate").jeDate({
+		   			 format:"YYYY-MM-DD",
+			})
+		})
+	</script>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="topContent">
+			<div class="Img1">
+				<img src="images/logo.jpg" alt="" class="logo">
+			</div>
+				
+			<div class="Img2">
+				<input type="text" value="请输入课程名称" style="color:rgb(153,153,153)" class="inputSearch">
+				<img src="images/search.png" alt="" class="searchbutton">
+			</div>
+				
+	</div>
+
+	<!-- 添加学生信息 -->
+	<div class="contentAdd">
+		<h3>添加学生信息</h3>
+		<fieldset>
+			<legend>基本信息</legend>
+			<div class="courseContent">
+				
+				<table cellspacing="0" border="0" style="border-collapse:separate; border-spacing:0px 10px;">
+					<tbody>
+						<tr>
+							<td>学生学号：</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>学生姓名：</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系：</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>入学时间：</td>
+							<td><input class="datainp wicon" id="selectStartDate" type="text" placeholder=""  readonly></td>
+						</tr>
+						
+						<tr>
+
+							<td ><button id="addStudent"><a href="studentInfo.html">保存</a></button></td>
+							
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+		</fieldset>
+	</div>
+</body>
+</html>

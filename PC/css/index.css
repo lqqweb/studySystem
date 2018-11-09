@@ -1,0 +1,27 @@
+
+/* 课程表 */
+.courseListContent{
+    margin-left:15px;
+
+}
+.selectMonth{
+	margin:20px 0 0 15px;
+}
+.selectMonth span{
+	font-size:18px;
+}
+
+.btnMonth,.btnYear{
+	display:inline-block;
+	padding:5px 10px;
+	background-color:#419fed;
+	color:white;
+	cursor:pointer;
+}
+.integralTable{
+	margin-top:10px;
+	width:760px;
+}
+thead tr th,tbody tr td{
+	text-align:center;
+}

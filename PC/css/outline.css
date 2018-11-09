@@ -1,0 +1,69 @@
+/* 大纲内容 */
+.rightContent{
+	display:flex;
+}
+/* 知识结构 */
+.outlineStructure{
+	border:1px solid gray;
+}
+
+
+.wrap-menu {
+	margin:0 auto;
+	/* height: 350px; */
+	 overflow:auto; 
+	 width:200px; 
+	 background:#F6F6F6; 
+	 font:12px/1.5 Tahoma,Arial,sans-serif;
+	}
+.wrap-menu ul{ 
+	list-style:none; 
+	margin:0; padding:0;
+}
+.wrap-menu ul li{ 
+	text-indent:3em; 
+	white-space:nowrap; 
+}
+.wrap-menu ul li h2{
+	 cursor:pointer; 
+	 /*height:100%; width:100%;*/ 
+	 margin:0 0 1px 0; 
+	 font:15px/31px '宋体'; 
+	 color:#fff; 
+	 background:lightslategrey;     
+	 margin-left: -25px;
+	}
+.wrap-menu ul li a{ 
+	display:block; 
+	outline:none; 
+	height:25px; 
+	line-height:25px; 
+	margin:1px 0; 
+	color:#1A385C; 
+	text-decoration:none;
+	margin-left: -25px;
+}
+.wrap-menu ul li img{ 
+	margin-right:10px; 
+	margin-left:-17px; 
+	margin-top:0px; 
+	width:20px; 
+	height:20px; 
+}
+.wrap-menu ul li a:hover{ 
+	/*background-color:#ccc;*/ 
+	background-image:none;
+}
+.wrap-menu ul li img.unfold {
+	background-position: 0 -9px;
+	transform: rotate(90deg);
+}
+/* 分支内容 */
+.branchContent{
+	/* border:1px solid  yellow; */
+	margin-left:15px;
+}
+thead tr th,tbody tr td{
+	width:160px;
+	text-align:center;
+}

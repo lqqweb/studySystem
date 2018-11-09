@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	color:white;
+	padding-bottom:1rem;
+}
+.bg{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	background:linear-gradient(to bottom,#3677b3,#9bc5f1);
+	z-index:-1;
+	width:6.4rem;
+}
+.title{
+	font-size: 0.32rem;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.contentList{
+	margin: 0.2rem;
+    font-size: 0.28rem;
+}
+.contentList ul li{
+	margin-top: 0.2rem;
+    margin-bottom: 0.15rem;
+    font-size: 0.25rem;
+    list-style:none;
+}
+ul li p{
+	display:inline-block;
+}
+ul li div{
+	display:none;
+	padding: 0.1rem 0.2rem 0 0.2rem;
+}
+.addColor{
+	color:red;
+}
+.tigle{
+	width:0px;
+	height:0px;
+	border-bottom:5px solid transparent;
+	border-top:5px solid transparent;
+	border-left:5px solid white;
+	font-size:0px;
+	line-height:0px;
+	display:inline-block;
+	margin-right:0.2rem;
+}
+.changeTigle{
+	border-left:5px solid red;
+	transform:rotate(90deg);
+}
+
+.chapterContent{
+	margin:0 0.2rem;
+	font-size:0.24rem;
+	letter-spacing: 0.02rem;
+}
+.bottoms{
+	width:6.4rem;
+	height:0.8rem;
+	background: #5699d8;
+	position:fixed;
+	bottom:0;
+	left:0;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.25rem;
+}
+.bottoms a{
+	color:white;
+}
+.prev{
+	border-right: 0.01rem solid white;
+    padding-right: 1.5rem;
+}
